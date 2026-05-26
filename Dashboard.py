@@ -38,7 +38,7 @@ st.markdown('<div class="sub-title">Sistem monitoring komprehensif risiko anemia
 @st.cache_data
 def load_engineered_data():
     try:
-        df = pd.read_csv("eye_nemia_feature_engineered.csv")
+        df = pd.read_csv("Dataset/eye_nemia_feature_engineered.csv")
         return df
     except FileNotFoundError:
         st.error("Gagal Memuat Data: File 'eye_nemia_feature_engineered.csv' tidak ditemukan di direktori saat ini.")
